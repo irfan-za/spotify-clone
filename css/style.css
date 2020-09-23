@@ -95,7 +95,8 @@ nav .container {
 .nav-link a:hover {
   color: #1ed760;
 }
-.nav-brand-dua{
+
+.nav-brand-dua {
   display: none;
 }
 
@@ -305,6 +306,21 @@ footer .container {
 
 /* responsive breakpoint */
 
+@media (min-width: 1600px) {
+  nav .container {
+    max-width: 1500px;
+  }
+
+  footer .container {
+    max-width: 1500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
+}
 
 @media (min-width: 992px) {
   .container {
@@ -413,8 +429,8 @@ footer .container {
     background: rgb(0, 0, 0);
     transition: 1s;
   }
-  
-  .nav-link.active::before{
+
+  .nav-link.active::before {
     content: '';
     position: absolute;
     left: -390px;
@@ -435,33 +451,39 @@ footer .container {
     align-items: flex-start;
   }
 
-  .nav-link.active a,.nav-link.active span  {
+  .nav-link.active a,
+  .nav-link.active span {
     color: rgb(255, 255, 255);
     margin-bottom: 20px;
   }
+
   .nav-link.active a:nth-child(1),
   .nav-link.active a:nth-child(2),
-  .nav-link.active a:nth-child(3){
+  .nav-link.active a:nth-child(3) {
     font-size: 30px;
   }
+
   .nav-link.active a:nth-child(5),
-  .nav-link.active a:nth-child(6){
-    color: rgb(217,218,220);
+  .nav-link.active a:nth-child(6) {
+    color: rgb(217, 218, 220);
   }
-  .nav-link.active a:hover{
+
+  .nav-link.active a:hover {
     color: #1ed760;
   }
+
   .nav-link.active span {
     font-size: 30px;
     transform: rotate(90deg) translateY(-15px);
   }
-  .nav-brand-dua.active{
+
+  .nav-brand-dua.active {
     position: absolute;
     bottom: 100px;
     display: block;
     filter: invert(1);
     width: 85px;
-  
+
   }
 
 
@@ -516,10 +538,11 @@ footer .container {
   .list ul li span {
     margin-top: 50px;
   }
+
   .list ul li {
     display: inline-flex;
-   
-    
+
+
   }
 
   .sosmed {
@@ -554,7 +577,7 @@ footer .container {
     font-size: 10px;
   }
 
-  */
+
 }
 
 @media (max-width: 576px) {
